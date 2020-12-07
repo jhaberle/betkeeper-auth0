@@ -26,7 +26,7 @@ const Box = () => {
                         </div>
                         <div className="row">
                             <div className="col">
-                                <Accordion defaultActiveKey="0">
+                                <Accordion>
                                     <Card>
                                         <Accordion.Toggle className="accordiontoggle" as={Card.Header} eventKey="0">
                                         {drinks ? drinks[0].strDrink : "Not found"}

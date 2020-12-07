@@ -95,6 +95,41 @@ const MatchBox = () => {
                                 <td>{betresult.data[4].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
                                 <td>{betresult.data[4].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
                             </tr>
+                            <tr>
+                                <td>{betresult.data[5].teams[0]}</td>
+                                <td>{betresult.data[5].teams[1]}</td>
+                                <td>{betresult.data[5].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[5].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[5].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                            </tr>
+                            <tr>
+                                <td>{betresult.data[6].teams[0]}</td>
+                                <td>{betresult.data[6].teams[1]}</td>
+                                <td>{betresult.data[6].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[6].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[6].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                            </tr>
+                            <tr>
+                                <td>{betresult.data[7].teams[0]}</td>
+                                <td>{betresult.data[7].teams[1]}</td>
+                                <td>{betresult.data[7].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[7].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[7].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                            </tr>
+                            <tr>
+                                <td>{betresult.data[8].teams[0]}</td>
+                                <td>{betresult.data[8].teams[1]}</td>
+                                <td>{betresult.data[8].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[8].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[8].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                            </tr>
+                            <tr>
+                                <td>{betresult.data[9].teams[0]}</td>
+                                <td>{betresult.data[9].teams[1]}</td>
+                                <td>{betresult.data[9].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[9].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                                <td>{betresult.data[9].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
+                            </tr>
                         </tbody>
                     </table>
                     ) : <p className="clicktext text-center">Click on Search</p>}
