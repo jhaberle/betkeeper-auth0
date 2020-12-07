@@ -8,3 +8,8 @@
     padding: 15px;
     border: 2px solid black;
 }
+
+.clicktext {
+    font-weight: 600;
+    font-size: 30px;
+}

@@ -11,14 +11,6 @@ const NavBar = () => {
         <span class="navbar-toggler-icon"></span>
         </button>
 		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-			{/* <ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="/bets">BetSlips</a>
-				</li>
-			</ul> */}
 			<ul class="navbar-nav my-2 my-lg-0">
                 <li className="nav-item active">
                     <LoginButton/>

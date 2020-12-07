@@ -8,3 +8,16 @@
     padding: 15px;
     border: 2px solid black;
 }
+
+.image {
+    text-align: center;
+}
+
+.ingredients {
+    text-align: center;
+}
+
+.accordiontoggle {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: white;
+}
