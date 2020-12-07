@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter} from 'react-router-dom';
 import {Auth0Provider} from '@auth0/auth0-react';
 import App from './App';
+import "../node_modules/jquery/dist/jquery.min.js";
+import "bootstrap/dist/css/bootstrap.min.css";
+import './index.css';
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -12,7 +16,9 @@ ReactDOM.render(
   domain={domain}
   clientId={clientId}
   redirectUri={window.location.origin}>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </Auth0Provider>,
   document.getElementById('root')
 );
