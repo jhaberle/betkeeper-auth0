@@ -1,0 +1,21 @@
+td {
+    color: whitesmoke;
+}
+
+.updateInput {
+    display: flex;
+    text-align: center;
+    right: 20px;
+}
+
+.labelUpdate {
+    color: white;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
