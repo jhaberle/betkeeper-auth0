@@ -32,18 +32,20 @@ const Box = () => {
                                         {drinks ? drinks[0].strDrink : "Not found"}
                                         </Accordion.Toggle>
                                         <Accordion.Collapse eventKey="0">
-                                        <Card.Body>
+                                        <Card.Body className="fontcolor">
                                             <div className="image">
                                                 <Image src={drinks ? drinks[0].strDrinkThumb : "Not Found"} thumbnail width="150" height="150" />
                                             </div>
+                                            <br/>
                                             <div className="ingredients">
-                                                <h5>Ingredients:</h5>
+                                                <h5 className="titles">Ingredients:</h5>
                                                     <h6>{drinks ? drinks[0].strIngredient1 : "Not Found"}</h6>
                                                     <h6>{drinks ? drinks[0].strIngredient2 : "Not Found"}</h6>
                                                     <h6>{drinks ? drinks[0].strIngredient3 : "Not Found"}</h6>
                                                     <h6>{drinks ? drinks[0].strIngredient4 : "Not Found"}</h6>
                                                     <h6>{drinks ? drinks[0].strIngredient5 : "Not Found"}</h6>
                                             </div>
+                                            <h5 className="titles">Instructions:</h5>
                                             <p>{drinks ? drinks[0].strInstructions : "Not Found"}</p>
                                         </Card.Body>
                                         </Accordion.Collapse>

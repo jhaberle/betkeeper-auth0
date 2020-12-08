@@ -2,7 +2,6 @@ import React from 'react';
 // import JSONPretty from 'react-json-pretty';
 import {useAuth0} from '@auth0/auth0-react';
 import './style.css';
-import SecondLogoutButton from '../Logoutbutton/2LogoutButton';
 
 const Profile = ()=> {
     const {user, isAuthenticated} = useAuth0();
@@ -10,24 +9,46 @@ const Profile = ()=> {
     return(
         isAuthenticated && (
             <div className="profile">
-                <img src={user.picture} alt={user.name} />
-                <h4>Welcome to Bet Keeper {user.name}</h4>
-                <p>{user.email}</p>
-                <div className="text-center">
-                    <a href="/home" className="example_b">Home</a>
+                <div class="row gutters-sm">
+                    <div class="col mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <img className="rounded-circle" src={user.picture} alt={user.name} width="150"/>
+                                    <div class="mt-3">
+                                        <h4 className="username">{user.name}</h4>
+                                        <p class="useremail text-secondary mb-1">{user.email}</p>
+                                        <div className="row text-center">
+                                            <div className="col">
+                                                <a href="/home" className="example_b">Home</a>
+                                            </div>
+                                            <div className="col">
+                                                <a href="/bets" className="example_b">Bet Slips</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="text-center">
-                    <a href="/bets" className="example_b">Bet Slips</a>
-                </div>
-                <br></br>
-                <div className="logout">
-                    <SecondLogoutButton/>
-                </div>
-                {/* <JSONPretty data={user} /> */}
-                {/* {JSON.stringify(user, null, 2)} */}
             </div>
         )
     )
 }
 
 export default Profile;
+
+{/* {/* <img className="rounded-circle" src={user.picture} alt={user.name} />
+                        <br/><br/>
+                        <h4>Welcome back! {user.name}</h4>
+                        <p>{user.email}</p>
+                                <div className="row text-center">
+                                    <div className="col">
+                                        <a href="/home" className="example_b">Home</a>
+                                    </div>
+                                    <div className="col">
+                                        <a href="/bets" className="example_b">Bet Slips</a>
+                                    </div>
+                                </div>
+                        <br></br> */}

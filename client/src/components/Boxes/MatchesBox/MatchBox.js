@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import axios from 'axios';
 import './MatchBox.css';
+import { set } from 'mongoose';
 
 const MatchBox = () => {
 
@@ -22,6 +23,11 @@ const MatchBox = () => {
     const handleMatchesFormSubmit = (event) => {
         event.preventDefault();
         searchMatches();
+    }
+
+    const hideClick = (event) => {
+        event.preventDefault();
+        setShow(false);
     }
 
     // console.log(betresult.data[0].sites[0].odds.h2h[0]);
@@ -49,6 +55,16 @@ const MatchBox = () => {
             <div className="row">
                 <div className="col">
                     { show ? (
+                    <>
+                    <div className="row happyface">
+                        <div className="col">
+                            <img className="rounded-circle" src="https://ca-times.brightspotcdn.com/dims4/default/1f6a447/2147483647/strip/true/crop/600x338+0+21/resize/1200x675!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fbd%2F38%2F0ab19f851675e6b23dda752e0c61%2Fla-xpm-photo-2014-jan-19-la-sp-patriots-broncos-plaschke-20140120" alt="happy face" width="300px" height="200px"/>
+                        </div>
+                    </div>
+                    <br/><br/>
+                    <div>
+                    <button className="btn btn-info" onClick={hideClick}>Hide</button>
+                    </div>
                     <table class="table">
                         <thead>
                             <tr>
@@ -123,16 +139,15 @@ const MatchBox = () => {
                                 <td>{betresult.data[8].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
                                 <td>{betresult.data[8].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
                             </tr>
-                            <tr>
-                                <td>{betresult.data[9].teams[0]}</td>
-                                <td>{betresult.data[9].teams[1]}</td>
-                                <td>{betresult.data[9].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
-                                <td>{betresult.data[9].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
-                                <td>{betresult.data[9].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
-                            </tr>
                         </tbody>
                     </table>
-                    ) : <p className="clicktext text-center">Click on Search</p>}
+                    </>
+                    ) :
+                    <>
+                    <p className="clicktext text-center">Click on Search!!</p>
+                    <img src="https://movietvtechgeeks.com/wp-content/uploads/2015/05/adrian-peterson-goes-on-angry-twitter-rant-about-vikings-fans-2015.png" alt="mad face" width="300px" height="200px"/>
+                    </>  
+                    }
                 </div>
             </div>
         </div>
