@@ -132,13 +132,7 @@ const MatchBox = () => {
                                 <td>{betresult.data[7].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
                                 <td>{betresult.data[7].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
                             </tr>
-                            <tr>
-                                <td>{betresult.data[8].teams[0]}</td>
-                                <td>{betresult.data[8].teams[1]}</td>
-                                <td>{betresult.data[8].sites[0].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
-                                <td>{betresult.data[8].sites[1].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
-                                <td>{betresult.data[8].sites[5].odds.h2h[0]}/{betresult.data[0].sites[0].odds.h2h[1]}</td>
-                            </tr>
+                           
                         </tbody>
                     </table>
                     </>
