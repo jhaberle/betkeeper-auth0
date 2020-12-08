@@ -1,0 +1,10 @@
+.carouselimg {
+    height: 600px;
+    width: 500px;
+}
+
+h3, .carouselparagraph {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: 700;
+}

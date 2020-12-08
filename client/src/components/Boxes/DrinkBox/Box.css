@@ -21,3 +21,12 @@
     background-image: linear-gradient(to right, #434343 0%, black 100%);
     color: white;
 }
+
+.fontcolor {
+    color: white;
+    font-size: small;
+}
+
+.titles {
+    text-decoration: underline;
+}

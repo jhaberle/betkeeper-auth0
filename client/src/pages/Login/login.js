@@ -3,6 +3,7 @@ import NavBar from '../../components/NavBar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Profile from '../../components/Profile/Profile';
 import SecondLoginButton from '../../components/Loginbutton/2LoginButton';
+import Carousels from '../../components/Carousel/Carousel';
 import './style.css';
 
 const Login = () => {
@@ -20,6 +21,9 @@ const Login = () => {
                     </div>
                     <div className="text-center">
                         <Profile/>
+                    </div>
+                    <div className="text-center">
+                        <Carousels/>
                     </div>
 	            </div>
             </div>
